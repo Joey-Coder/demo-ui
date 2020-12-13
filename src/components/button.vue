@@ -5,14 +5,17 @@
       `d-button--${type}`,
       plain ? 'is-plain' : '',
       round ? 'is-round' : '',
-      circle ? 'is-circle' : ''
+      circle ? 'is-circle' : '',
+      disabled ? 'is-disabled' : ''
     ]"
+    :disabled="disabled"
     @click="handleClick"
   >
+    <div class="mask" v-if="disabled"></div>
     <fai :icon="icon" v-if="icon" />
     <!-- tip:根据是否传入内容进行span渲染 -->
     <span v-if="$slots.default">
-      <slot> </slot>
+      <slot></slot>
     </span>
   </button>
 </template>
@@ -65,6 +68,11 @@ export default {
       // tip：这里icon为数组类型，给它添加一个布尔作为默认值，让fai不渲染
       type: [Array, Boolean],
       default: false
+    },
+    // disabled禁用
+    disabled: {
+      type: Boolean,
+      default: false
     }
   },
   created() {},
@@ -76,6 +84,7 @@ export default {
 <style scoped lang="scss">
 .d-button {
   display: inline-block;
+  position: relative;
   font-family: 'PingFang SC', 'Microsoft Yahei', sans-serif;
   line-height: 1;
   cursor: pointer;
@@ -232,5 +241,25 @@ export default {
 // 让图标和文字之间空开
 .d-button [class*='fa-'] + span {
   margin-left: 5px;
+}
+// 禁用
+.d-button.d-button.is-disabled .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.d-button.is-round .mask {
+  border-radius: 4px;
+}
+
+.d-button.is-circle .mask {
+  border-radius: 50%;
+}
+.d-button.is-disabled {
+  cursor: no-drop;
 }
 </style>

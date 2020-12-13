@@ -13,7 +13,7 @@
     <div class="row">
       <h3>朴素按钮</h3>
       <d-button plain>button</d-button>
-      <d-button type="primary" plain :icon="['far', 'edit']">primary</d-button>
+      <d-button type="primary" plain>primary</d-button>
       <d-button type="success" plain>success</d-button>
       <d-button type="info" plain>info</d-button>
       <d-button type="warning" plain>warning</d-button>
@@ -37,6 +37,15 @@
       <d-button type="info" circle :icon="['far', 'envelope']"> </d-button>
       <d-button type="warning" circle :icon="['far', 'star']"> </d-button>
       <d-button type="danger" circle :icon="['far', 'trash-alt']"> </d-button>
+    </div>
+    <div class="row">
+      <h3>禁用按钮</h3>
+      <d-button plain disabled>button</d-button>
+      <d-button type="primary" disabled>primary</d-button>
+      <d-button type="success" disabled>success</d-button>
+      <d-button type="info" disabled>info</d-button>
+      <d-button type="warning" disabled>warning</d-button>
+      <d-button type="danger" disabled>danger</d-button>
     </div>
     <div class="row">
       <h3>文字加图标按钮</h3>

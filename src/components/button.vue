@@ -7,8 +7,13 @@
       round ? 'is-round' : '',
       circle ? 'is-circle' : ''
     ]"
+    @click="handleClick"
   >
-    <slot></slot>
+    <fai :icon="icon" v-if="icon" />
+    <!-- tip:根据是否传入内容进行span渲染 -->
+    <span v-if="$slots.default">
+      <slot> </slot>
+    </span>
   </button>
 </template>
 
@@ -18,7 +23,11 @@ export default {
   data() {
     return {}
   },
-  methods: {},
+  methods: {
+    handleClick(e) {
+      this.$emit('click', e)
+    }
+  },
   components: {},
   props: {
     // 按钮类型
@@ -50,6 +59,12 @@ export default {
     // 圆形按钮
     circle: {
       type: Boolean
+    },
+    // icon
+    icon: {
+      // tip：这里icon为数组类型，给它添加一个布尔作为默认值，让fai不渲染
+      type: [Array, Boolean],
+      default: false
     }
   },
   created() {},
@@ -213,5 +228,9 @@ export default {
 .d-button.is-circle {
   border-radius: 50%;
   padding: 12px;
+}
+// 让图标和文字之间空开
+.d-button [class*='fa-'] + span {
+  margin-left: 5px;
 }
 </style>

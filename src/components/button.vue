@@ -3,6 +3,7 @@
     :class="[
       'd-button',
       `d-button--${type}`,
+      mimicry ? 'is-mimicry' : '',
       plain ? 'is-plain' : '',
       round ? 'is-round' : '',
       circle ? 'is-circle' : '',
@@ -50,6 +51,10 @@ export default {
           ].indexOf(value) !== -1
         )
       }
+    },
+    mimicry: {
+      type: Boolean,
+      default: false
     },
     // 朴素按钮
     plain: {
@@ -115,6 +120,7 @@ export default {
   color: #fff;
   background-color: #409eff;
   border-color: #409eff;
+  //   box-shadow: inset 3px 6px 10px #337ecc, inset -3px -7px 10px #4dbeff;
   &:hover,
   &:focus {
     background: #66b1ff;
@@ -166,6 +172,27 @@ export default {
     background-color: #f78989;
     color: #fff;
   }
+}
+
+// 拟态
+.d-button.is-mimicry {
+  box-shadow: inset 3px 6px 10px #ccc, inset -3px -7px 10px #fff;
+}
+
+.d-button--primary.is-mimicry {
+  box-shadow: inset 3px 6px 10px #337ecc, inset -3px -7px 10px #4dbeff;
+}
+.d-button--info.is-mimicry {
+  box-shadow: inset 3px 6px 10px #73767a, inset -3px -7px 10px #adb0b8;
+}
+.d-button--success.is-mimicry {
+  box-shadow: inset 3px 6px 10px #6aa54e, inset -3px -7px 10px #a0f774;
+}
+.d-button--warning.is-mimicry {
+  box-shadow: inset 3px 6px 10px #bc914f, inset -3px -7px 10px #ffd977;
+}
+.d-button--danger.is-mimicry {
+  box-shadow: inset 3px 6px 10px #c45656, inset -3px -7px 10px #ff8282;
 }
 
 // 朴素按钮
@@ -247,13 +274,15 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(148, 146, 146, 0.39);
   left: 0;
   top: 0;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 3px rgba(216, 213, 213, 0.3);
+  border-radius: 4px;
+  z-index: 100;
 }
 .d-button.is-round .mask {
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 .d-button.is-circle .mask {

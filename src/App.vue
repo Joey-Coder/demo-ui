@@ -9,6 +9,15 @@
       <d-button type="warning">warning</d-button>
       <d-button type="danger">danger</d-button>
     </div>
+    <div class="row">
+      <h3>拟态按钮</h3>
+      <d-button mimicry>button</d-button>
+      <d-button type="primary" mimicry>primary</d-button>
+      <d-button type="success" mimicry>success</d-button>
+      <d-button type="info" mimicry>info</d-button>
+      <d-button type="warning" mimicry>warning</d-button>
+      <d-button type="danger" mimicry>danger</d-button>
+    </div>
 
     <div class="row">
       <h3>朴素按钮</h3>

@@ -198,6 +198,7 @@ export default {
 // 朴素按钮
 
 .d-button.is-plain {
+  box-shadow: unset;
   &:hover,
   &:focus {
     background: #fff;
@@ -206,6 +207,7 @@ export default {
   }
 }
 .d-button--primary.is-plain {
+  box-shadow: unset;
   color: #409eff;
   background: #ecf5ff;
   &:hover,
@@ -216,6 +218,7 @@ export default {
   }
 }
 .d-button--success.is-plain {
+  box-shadow: unset;
   color: #67c23a;
   background: #c2e7b0;
   &:hover,
@@ -226,6 +229,7 @@ export default {
   }
 }
 .d-button--info.is-plain {
+  box-shadow: unset;
   color: #909399;
   background: #d3d4d6;
   &:hover,
@@ -236,6 +240,7 @@ export default {
   }
 }
 .d-button--warning.is-plain {
+  box-shadow: unset;
   color: #e6a23c;
   background: #f5dab1;
   &:hover,
@@ -246,6 +251,7 @@ export default {
   }
 }
 .d-button--danger.is-plain {
+  box-shadow: unset;
   color: #f56c6c;
   background: #fbc4c4;
   &:hover,

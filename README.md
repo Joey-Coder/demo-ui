@@ -8,6 +8,8 @@
 
 ### 按钮(Button)
 
+<br>
+
 | 属性     | 值               | 描述                                                                 |
 | -------- | ---------------- | -------------------------------------------------------------------- |
 | type     | String           | 按钮类型：primary,info,success,warning,danger                        |
@@ -18,11 +20,30 @@
 | circle   | Boolean          | 是否为圆形按钮，默认为 false                                         |
 | icon     | Array 或 Boolean | font-awesome 字体数组，默认为 false                                  |
 
----
+<br>
 
 | 事件  | 值       | 描述     |
 | ----- | -------- | -------- |
 | click | Function | 点击事件 |
+
+<br>
+
+### 对话框(Dialog)
+
+<br>
+
+| 属性     | 值      | 描述                               |
+| -------- | ------- | ---------------------------------- |
+| title    | String  | 对话框头部提示，默认为"提示"       |
+| visiable | Boolean | 对话框可见状态，默认为 false       |
+| mimicry  | Boolean | 对话框是否为拟态风格，默认为 false |
+
+<br>
+
+| 插槽   | 描述                    |
+| ------ | ----------------------- |
+| title  | Dialog 标题区的内容     |
+| footer | Dialog 按钮操作区的内容 |
 
 ## Project setup
 

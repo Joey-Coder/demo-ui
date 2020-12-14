@@ -87,13 +87,26 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+$normal-color: #fff;
+$normal-active-color: #409eff;
+$primary-color: #409eff;
+$primary-active-color: #66b1ff;
+$info-color: #909399;
+$info-active-color: #a6a9ad;
+$success-color: #67c23a;
+$success-active-color: #85ce61;
+$warning-color: #e6a23c;
+$warning-active-color: #ebb563;
+$danger-color: #f56c6c;
+$danger-active-color: #f78989;
+
 .d-button {
   display: inline-block;
   position: relative;
   font-family: 'PingFang SC', 'Microsoft Yahei', sans-serif;
   line-height: 1;
   cursor: pointer;
-  background-color: #fff;
+  background-color: $normal-color;
   border: 1px solid #dcdfe6;
   white-space: nowrap;
   color: #606266;
@@ -110,7 +123,7 @@ export default {
   border-radius: 4px;
   &:hover,
   &:focus {
-    color: #409eff;
+    color: $normal-active-color;
     border-color: #c6e2ff;
     background-color: #ecf5ff;
   }
@@ -118,58 +131,58 @@ export default {
 
 .d-button--primary {
   color: #fff;
-  background-color: #409eff;
-  border-color: #409eff;
+  background-color: $primary-color;
+  border-color: $primary-color;
   //   box-shadow: inset 3px 6px 10px #337ecc, inset -3px -7px 10px #4dbeff;
   &:hover,
   &:focus {
-    background: #66b1ff;
-    background-color: #66b1ff;
+    background: $normal-active-color;
+    background-color: $normal-active-color;
     color: #fff;
   }
 }
 .d-button--success {
   color: #fff;
-  background-color: #67c23a;
-  border-color: #67c23a;
+  background-color: $success-color;
+  border-color: $success-color;
   &:hover,
   &:focus {
-    background: #85ce61;
-    background-color: #85ce61;
+    background: $success-active-color;
+    background-color: $success-active-color;
     color: #fff;
   }
 }
 
 .d-button--info {
   color: #fff;
-  background-color: #909399;
-  border-color: #909399;
+  background-color: $info-color;
+  border-color: $info-color;
   &:hover,
   &:focus {
-    background: #a6a9ad;
-    background-color: #a6a9ad;
+    background: $info-active-color;
+    background-color: $info-active-color;
     color: #fff;
   }
 }
 .d-button--warning {
   color: #fff;
-  background-color: #e6a23c;
-  border-color: #e6a23c;
+  background-color: $warning-color;
+  border-color: $warning-color;
   &:hover,
   &:focus {
-    background: #ebb563;
-    background-color: #ebb563;
+    background: $warning-active-color;
+    background-color: $warning-active-color;
     color: #fff;
   }
 }
 .d-button--danger {
   color: #fff;
-  background-color: #f56c6c;
-  border-color: #f56c6c;
+  background-color: $danger-color;
+  border-color: $danger-color;
   &:hover,
   &:focus {
-    background: #f78989;
-    background-color: #f78989;
+    background: $danger-active-color;
+    background-color: $danger-active-color;
     color: #fff;
   }
 }

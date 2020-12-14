@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import DemoButton from './components/button.vue'
 import DemoDialog from './components/dialog.vue'
+import DemoInput from './components/input.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
@@ -10,7 +11,8 @@ import {
   faEdit,
   faTrashAlt,
   faSmile,
-  faTimesCircle
+  faTimesCircle,
+  faEye
 } from '@fortawesome/free-regular-svg-icons'
 
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
@@ -22,7 +24,8 @@ library.add(
   faCheck,
   faTrashAlt,
   faSmile,
-  faTimesCircle
+  faTimesCircle,
+  faEye
 )
 
 Vue.config.productionTip = false
@@ -31,6 +34,8 @@ Vue.config.productionTip = false
 Vue.component(DemoButton.name, DemoButton)
 // 全局注册dialog组件
 Vue.component(DemoDialog.name, DemoDialog)
+// 全局注册input组件
+Vue.component(DemoInput.name, DemoInput)
 // 全局注册字体图标组件
 Vue.component('fai', FontAwesomeIcon)
 

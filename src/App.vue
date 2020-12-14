@@ -71,7 +71,7 @@
         <d-button type="primary" @click="sayHello">say hello</d-button>
       </div>
     </div> -->
-    <div class="dialog">
+    <!-- <div class="dialog">
       <d-button type="primary" @click="dialogVisiable = true"
         >显示对话框</d-button
       >
@@ -92,6 +92,41 @@
           >
         </template>
       </d-dialog>
+    </div> -->
+    <div class="input">
+      <h2>输入框</h2>
+      <div class="row">
+        <h3>基本输入框</h3>
+        <d-input placeholder="请输入内容"></d-input>
+      </div>
+      <div class="row">
+        <h3>文本域输入框</h3>
+        <d-input placeholder="写点什么" type="textarea"></d-input>
+      </div>
+      <div class="row">
+        <h3>禁用</h3>
+        <d-input placeholder="请输入内容" disabled></d-input>
+      </div>
+      <div class="row">
+        <h3>可清除</h3>
+        <d-input
+          placeholder="请输入内容"
+          type="text"
+          name="username"
+          v-model="username"
+          clearable
+        ></d-input>
+      </div>
+      <div class="row">
+        <h3>密码可见</h3>
+        <d-input
+          placeholder="请输入内容"
+          type="password"
+          name="password"
+          v-model="password"
+          show-password
+        ></d-input>
+      </div>
     </div>
   </div>
 </template>
@@ -100,7 +135,9 @@
 export default {
   data() {
     return {
-      dialogVisiable: false
+      dialogVisiable: false,
+      username: 'Joey',
+      password: '123456'
     }
   },
   methods: {
@@ -119,6 +156,11 @@ export default {
   margin-bottom: 20px;
   .d-button {
     margin-right: 10px;
+  }
+}
+.input {
+  & .d-input {
+    width: 18vw;
   }
 }
 </style>

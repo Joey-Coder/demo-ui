@@ -162,8 +162,25 @@
       </div>
     </div> -->
     <div class="radio">
+      <h2>单选框</h2>
       <div class="row">
-        <d-radio></d-radio>
+        <h3>基本样式</h3>
+        <d-radio label="1" v-model="gender" name="male">男</d-radio>
+        <d-radio label="2" v-model="gender" name="female">女</d-radio>
+      </div>
+      <div class="row">
+        <h3>自定义颜色</h3>
+        <d-radio label="1" v-model="gender" name="male" color="skyblue"
+          >男</d-radio
+        >
+        <d-radio label="2" v-model="gender" name="female" color="pink"
+          >女</d-radio
+        >
+      </div>
+      <div class="row">
+        <h3>拟态</h3>
+        <d-radio label="1" v-model="gender" name="male" mimicry>男</d-radio>
+        <d-radio label="2" v-model="gender" name="female" mimicry>女</d-radio>
       </div>
     </div>
   </div>
@@ -176,7 +193,8 @@ export default {
       dialogVisiable: false,
       username: 'Joey',
       password: '123456',
-      switchActive: false
+      switchActive: false,
+      gender: '1'
     }
   },
   methods: {

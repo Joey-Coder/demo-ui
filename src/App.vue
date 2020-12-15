@@ -128,13 +128,13 @@
         ></d-input>
       </div>
     </div> -->
-    <div class="switch">
+    <!-- v-model相当于:value=xxx和@input="xxx=e.target.value" -->
+    <!-- <div class="switch">
       <h2>Switch</h2>
       <div class="row">
         <h3>基本Switch</h3>
         <d-switch v-model="switchActive" @change="handleChange"></d-switch>
       </div>
-      <!-- v-model相当于:value=xxx和@input="xxx=e.target.value" -->
       <div class="row">
         <h3>自定义颜色</h3>
         <d-switch
@@ -159,6 +159,11 @@
             @change="handleChange"
           ></d-switch>
         </div>
+      </div>
+    </div> -->
+    <div class="radio">
+      <div class="row">
+        <d-radio></d-radio>
       </div>
     </div>
   </div>

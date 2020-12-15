@@ -45,6 +45,72 @@
 | title  | Dialog 标题区的内容     |
 | footer | Dialog 按钮操作区的内容 |
 
+<br>
+
+### 输入框(Input)
+
+<br>
+
+| 属性         | 值      | 描述                               |
+| ------------ | ------- | ---------------------------------- |
+| placeholder  | String  | 占位符，默认为空字符串             |
+| type         | String  | 表单类型，默认为'text'             |
+| mimicry      | Boolean | 对话框是否为拟态风格，默认为 false |
+| name         | String  | 表单命名，默认为空                 |
+| value        | String  | 表单值，默认为空字符串             |
+| disabled     | Boolean | 是否禁用，默认为 false             |
+| clearable    | Boolean | 是否可清空，默认为 false           |
+| showPassword | Boolean | 是否显示密码可见，默认为 false     |
+
+<br>
+
+### 切换(Switch)
+
+<br>
+
+| 属性          | 值      | 描述                               |
+| ------------- | ------- | ---------------------------------- |
+| mimicry       | Boolean | 对话框是否为拟态风格，默认为 false |
+| name          | String  | 表单命名，默认为空                 |
+| value         | String  | 表单值，默认为空字符串             |
+| disabled      | Boolean | 是否禁用，默认为 false             |
+| activeColor   | String  | 激活状态颜色，默认为#dcdfe6        |
+| inactiveColor | String  | 未激化状态颜色，默认为#dcdfe6      |
+
+<br>
+
+---
+
+<br>
+
+| 事件   | 值       | 描述                               |
+| ------ | -------- | ---------------------------------- |
+| change | Function | 状态修改触发事件，返回修改后的状态 |
+
+<br>
+
+### 单选框(Radio)
+
+<br>
+
+| 属性    | 值                        | 描述                               |
+| ------- | ------------------------- | ---------------------------------- |
+| label   | [String, Number, Boolean] | 单选框 label 值，默认为空字符串    |
+| mimicry | Boolean                   | 对话框是否为拟态风格，默认为 false |
+| name    | String                    | 表单命名，默认为空                 |
+| value   | String                    | 表单值，默认为空字符串             |
+| color   | String                    | 单选框选择时的颜色，默认为#409eff  |
+
+<br>
+
+### 单选框组(RadioGroup)
+
+<br>
+
+用于包裹 radio，通过 v-model 指定组内所有的 radio 的 v-model
+
+---
+
 ## Project setup
 
 ```

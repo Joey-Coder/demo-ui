@@ -170,7 +170,7 @@
       </div>
       <div class="row">
         <h3>自定义颜色</h3>
-        <d-radio label="1" v-model="gender" name="male" color="skyblue"
+        <d-radio label="1" v-model="gender" name="male" color="green"
           >男</d-radio
         >
         <d-radio label="2" v-model="gender" name="female" color="pink"
@@ -181,6 +181,13 @@
         <h3>拟态</h3>
         <d-radio label="1" v-model="gender" name="male" mimicry>男</d-radio>
         <d-radio label="2" v-model="gender" name="female" mimicry>女</d-radio>
+      </div>
+      <div class="row">
+        <h3>radio组</h3>
+        <d-radio-group v-model="gender">
+          <d-radio label="1" name="male">男</d-radio>
+          <d-radio label="2" name="female">女</d-radio>
+        </d-radio-group>
       </div>
     </div>
   </div>

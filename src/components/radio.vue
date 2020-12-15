@@ -1,5 +1,5 @@
 <template>
-  <label :class="['d-radio', label === value ? 'is-checked' : '']">
+  <label :class="['d-radio', isChecked ? 'is-checked' : '']">
     <span class="d-radio__input">
       <span
         :class="['d-radio__inner', mimicry ? 'is-mimicry' : '']"
@@ -30,6 +30,11 @@ export default {
   },
   methods: {},
   components: {},
+  inject: {
+    RadioGroup: {
+      default: ''
+    }
+  },
   props: {
     label: {
       type: [String, Number, Boolean],
@@ -54,14 +59,20 @@ export default {
   computed: {
     model: {
       get() {
-        return this.value
+        return this.isGroup ? this.RadioGroup.value : this.value
       },
       set(value) {
-        this.$emit('input', value)
+        this.isGroup
+          ? this.RadioGroup.$emit('input', value)
+          : this.$emit('input', value)
       }
     },
+    isGroup() {
+      // 判断是否被radiogroup包裹
+      return !!this.RadioGroup
+    },
     isChecked() {
-      return this.label === this.value
+      return this.label === this.model
     }
   },
   watched: {}

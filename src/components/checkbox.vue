@@ -21,6 +21,7 @@
         :name="name"
         :value="label"
         v-model="model"
+        :disabled="disabled"
       />
     </span>
     <span class="d-checkbox__label">
@@ -32,6 +33,7 @@
 <script>
 export default {
   name: 'DCheckbox',
+  // 接收父组件checkboxgroup的this,如果有
   inject: {
     CheckboxGroup: {
       default: ''
@@ -79,7 +81,6 @@ export default {
         return this.isGroup ? this.CheckboxGroup.value : this.value
       },
       set(value) {
-        console.log('sfd')
         this.isGroup
           ? this.CheckboxGroup.$emit('input', value)
           : this.$emit('input', value)

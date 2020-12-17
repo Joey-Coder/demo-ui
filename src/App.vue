@@ -191,6 +191,7 @@
       </div>
     </div> -->
     <div class="checkout">
+      <h2>复选框</h2>
       <div class="row">
         <h3>基础样式</h3>
         <d-checkbox name="read" label="1" v-model="checkboxChoice"></d-checkbox>
@@ -224,6 +225,16 @@
         ></d-checkbox>
       </div>
     </div>
+    <div class="checkboxGroup">
+      <h2>复选框组</h2>
+      <div class="row">
+        <d-checkbox-group v-model="checkedArray">
+          <d-checkbox name="apple" label="1">苹果</d-checkbox>
+          <d-checkbox name="banana" label="2">香蕉</d-checkbox>
+          <d-checkbox name="peach" label="3">桃子</d-checkbox>
+        </d-checkbox-group>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -236,7 +247,8 @@ export default {
       password: '123456',
       switchActive: false,
       gender: '1',
-      checkboxChoice: true
+      checkboxChoice: false,
+      checkedArray: ['1', '3']
     }
   },
   methods: {

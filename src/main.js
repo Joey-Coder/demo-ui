@@ -8,6 +8,7 @@ import DemoRadio from './components/radio.vue'
 import DemoRadioGroup from './components/radio-group.vue'
 import DemoCheckbox from './components/checkbox.vue'
 import DemoCheckboxGroup from './components/checkbox-group.vue'
+import DemoFormItem from './components/form-item.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
@@ -51,6 +52,8 @@ Vue.component(DemoRadioGroup.name, DemoRadioGroup)
 Vue.component(DemoCheckbox.name, DemoCheckbox)
 // 全局注册checkout-group组件
 Vue.component(DemoCheckboxGroup.name, DemoCheckboxGroup)
+// 全局注册form-item组件
+Vue.component(DemoFormItem.name, DemoFormItem)
 // 全局注册字体图标组件
 Vue.component('fai', FontAwesomeIcon)
 

@@ -6,6 +6,7 @@ import DemoInput from './components/input.vue'
 import DemoSwitch from './components/switch.vue'
 import DemoRadio from './components/radio.vue'
 import DemoRadioGroup from './components/radio-group.vue'
+import DemoCheckout from './components/checkout.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
@@ -45,6 +46,8 @@ Vue.component(DemoSwitch.name, DemoSwitch)
 Vue.component(DemoRadio.name, DemoRadio)
 // 全局注册radio-group组件
 Vue.component(DemoRadioGroup.name, DemoRadioGroup)
+// 全局注册checkout组件
+Vue.component(DemoCheckout.name, DemoCheckout)
 // 全局注册字体图标组件
 Vue.component('fai', FontAwesomeIcon)
 

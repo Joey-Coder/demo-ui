@@ -161,7 +161,7 @@
         </div>
       </div>
     </div> -->
-    <div class="radio">
+    <!-- <div class="radio">
       <h2>单选框</h2>
       <div class="row">
         <h3>基本样式</h3>
@@ -188,6 +188,11 @@
           <d-radio label="1" name="male">男</d-radio>
           <d-radio label="2" name="female">女</d-radio>
         </d-radio-group>
+      </div>
+    </div> -->
+    <div class="checkout">
+      <div class="row">
+        <d-checkbox></d-checkbox>
       </div>
     </div>
   </div>

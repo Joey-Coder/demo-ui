@@ -192,7 +192,36 @@
     </div> -->
     <div class="checkout">
       <div class="row">
-        <d-checkbox></d-checkbox>
+        <h3>基础样式</h3>
+        <d-checkbox name="read" label="1" v-model="checkboxChoice"></d-checkbox>
+      </div>
+
+      <div class="row">
+        <h3>自定义颜色</h3>
+        <d-checkbox
+          name="read"
+          label="1"
+          v-model="checkboxChoice"
+          activeColor="orange"
+        ></d-checkbox>
+      </div>
+      <div class="row">
+        <h3>拟物样式</h3>
+        <d-checkbox
+          name="read"
+          label="1"
+          v-model="checkboxChoice"
+          mimicry
+        ></d-checkbox>
+      </div>
+      <div class="row">
+        <h3>禁用</h3>
+        <d-checkbox
+          name="read"
+          label="1"
+          v-model="checkboxChoice"
+          disabled
+        ></d-checkbox>
       </div>
     </div>
   </div>
@@ -206,7 +235,8 @@ export default {
       username: 'Joey',
       password: '123456',
       switchActive: false,
-      gender: '1'
+      gender: '1',
+      checkboxChoice: true
     }
   },
   methods: {

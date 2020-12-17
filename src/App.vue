@@ -238,12 +238,19 @@
 
     <div class="formItem">
       <h2>表单项</h2>
-      <d-form-item :label="form.name">
-        <d-input name="username"></d-input>
-      </d-form-item>
-      <d-form-item :label="form.gender">
-        <d-input name="email"></d-input>
-      </d-form-item>
+      <!-- <div class="row">
+        <d-form-item label="活动">
+          <d-input name="username"></d-input>
+        </d-form-item>
+      </div> -->
+      <d-form :model="form" label-width="80px">
+        <d-form-item label="用户名">
+          <d-input name="username" v-model="form.name"></d-input>
+        </d-form-item>
+        <d-form-item label="邮箱">
+          <d-input name="email" v-model="form.email"></d-input>
+        </d-form-item>
+      </d-form>
     </div>
   </div>
 </template>
@@ -260,8 +267,8 @@ export default {
       checkboxChoice: false,
       checkedArray: ['1', '3'],
       form: {
-        name: '姓名',
-        gender: '邮箱',
+        name: 'Joey',
+        email: 'Joey@mail.com',
         labelwidth: '80px'
       }
     }

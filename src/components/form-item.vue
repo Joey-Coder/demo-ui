@@ -1,6 +1,6 @@
 <template>
   <div class="d-form-item">
-    <label class="d-form-item__label">
+    <label class="d-form-item__label" :style="labelStyle">
       {{ label }}
     </label>
     <div class="d-form-item__content">
@@ -16,22 +16,17 @@ export default {
     return {}
   },
   inject: ['Form'],
-  methods: {},
-  components: {},
   props: {
     label: {
       type: String,
       default: ''
     }
   },
-  created() {},
-  mounted() {},
   computed: {
     labelStyle() {
-      return { width: this.Form.lableWidth }
+      return { width: this.Form.labelWidth }
     }
-  },
-  watched: {}
+  }
 }
 </script>
 <style scoped lang="scss">

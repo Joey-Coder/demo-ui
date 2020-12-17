@@ -109,7 +109,37 @@
 
 用于包裹 radio，通过 v-model 指定组内所有的 radio 的 v-model
 
+<br>
+
 ---
+
+<br>
+
+### 复选框(Radio)
+
+<br>
+
+| 属性    | 值                        | 描述                               |
+| ------- | ------------------------- | ---------------------------------- |
+| label   | [String, Number, Boolean] | 单选框 label 值，默认为空字符串    |
+| mimicry | Boolean                   | 对话框是否为拟态风格，默认为 false |
+| name    | String                    | 表单命名，默认为空                 |
+| value   | String                    | 表单值，默认为空字符串             |
+| color   | String                    | 单选框选择时的颜色，默认为#409eff  |
+
+<br>
+
+### 复选框组(RadioGroup)
+
+<br>
+
+用于包裹多个 checkbox，通过 v-model 指定组内所有的 checkout 的 v-model
+
+<br>
+
+---
+
+<br>
 
 ## Project setup
 

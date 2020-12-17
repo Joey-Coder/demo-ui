@@ -28,6 +28,10 @@
 
 <br>
 
+---
+
+<br>
+
 ### 对话框(Dialog)
 
 <br>
@@ -44,6 +48,10 @@
 | ------ | ----------------------- |
 | title  | Dialog 标题区的内容     |
 | footer | Dialog 按钮操作区的内容 |
+
+<br>
+
+---
 
 <br>
 
@@ -79,13 +87,13 @@
 
 <br>
 
----
-
-<br>
-
 | 事件   | 值       | 描述                               |
 | ------ | -------- | ---------------------------------- |
 | change | Function | 状态修改触发事件，返回修改后的状态 |
+
+<br>
+
+---
 
 <br>
 
@@ -115,7 +123,7 @@
 
 <br>
 
-### 复选框(Radio)
+### 复选框(Checkbox)
 
 <br>
 
@@ -129,7 +137,7 @@
 
 <br>
 
-### 复选框组(RadioGroup)
+### 复选框组(CheckboxGroup)
 
 <br>
 
@@ -141,30 +149,27 @@
 
 <br>
 
-## Project setup
+### 表单项(Form-item)
 
-```
-npm install
-```
+<br>
 
-### Compiles and hot-reloads for development
+| 属性  | 值     | 描述                            |
+| ----- | ------ | ------------------------------- |
+| label | String | 单选框 label 值，默认为空字符串 |
 
-```
-npm run serve
-```
+<br>
 
-### Compiles and minifies for production
+### 复选框组(RadioGroup)
 
-```
-npm run build
-```
+<br>
 
-### Lints and fixes files
+| 属性        | 值     | 描述                 |
+| ----------- | ------ | -------------------- |
+| model       | Object | 表单对象，必填       |
+| label-width | String | 标签宽度，默认"80px" |
 
-```
-npm run lint
-```
+<br>
 
-### Customize configuration
+---
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<br>

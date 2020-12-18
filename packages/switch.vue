@@ -6,8 +6,8 @@
       disabled ? 'is-disabled' : '',
       mimicry ? 'is-mimicry' : ''
     ]"
-    @click="handleClick"
     :aria-checked="value"
+    @click="handleClick"
   >
     <span
       class="d-switch__core"
@@ -119,7 +119,8 @@ export default {
     cursor: not-allowed;
   }
   &.is-mimicry .d-switch__core {
-    box-shadow: inset 4px 2px 6px #cacaca48, inset -4px -2px 6px rgba(255, 255, 255, 0.247);
+    box-shadow: inset 4px 2px 6px #cacaca48,
+      inset -4px -2px 6px rgba(255, 255, 255, 0.247);
   }
   &.is-mimicry .d-switch__core::after {
     box-shadow: inset 2px 1px 3px #d9d9d9, inset -2px -1px 3px #ffffff;

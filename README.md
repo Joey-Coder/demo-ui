@@ -4,6 +4,33 @@
 
 一个支持拟态风格的 Vue UI 组件
 
+## 使用
+
+1. 安装
+
+```
+npm i demot-ui
+```
+
+2. 全局注册
+
+```js
+import DemoUI from 'demot-ui'
+Vue.use(DemoUI)
+```
+
+3. 导入样式
+
+```js
+import 'demot-ui/dist/demot-ui.css'
+```
+
+<br>
+
+---
+
+<br>
+
 ## 组件
 
 ### 按钮(Button)

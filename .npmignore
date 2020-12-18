@@ -1,5 +1,5 @@
 # 忽略目录
-example/
+examples/
 packages/
 public/
 
@@ -7,3 +7,5 @@ public/
 vue.config.js
 babel.config.js
 *.map
+.prettierrc
+.eslintrc.js

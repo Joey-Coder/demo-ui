@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <!-- <div class="button">
+    <div class="button">
+      <h2>按钮</h2>
       <div class="row">
         <h3>普通按钮</h3>
         <d-button>button</d-button>
@@ -70,8 +71,8 @@
         <h3>点击事件</h3>
         <d-button type="primary" @click="sayHello">say hello</d-button>
       </div>
-    </div> -->
-    <!-- <div class="dialog">
+    </div>
+    <div class="dialog">
       <d-button type="primary" @click="dialogVisiable = true"
         >显示对话框</d-button
       >
@@ -92,8 +93,8 @@
           >
         </template>
       </d-dialog>
-    </div> -->
-    <!-- <div class="input">
+    </div>
+    <div class="input">
       <h2>输入框</h2>
       <div class="row">
         <h3>基本输入框</h3>
@@ -127,9 +128,9 @@
           show-password
         ></d-input>
       </div>
-    </div> -->
+    </div>
     <!-- v-model相当于:value=xxx和@input="xxx=e.target.value" -->
-    <!-- <div class="switch">
+    <div class="switch">
       <h2>Switch</h2>
       <div class="row">
         <h3>基本Switch</h3>
@@ -160,8 +161,8 @@
           ></d-switch>
         </div>
       </div>
-    </div> -->
-    <!-- <div class="radio">
+    </div>
+    <div class="radio">
       <h2>单选框</h2>
       <div class="row">
         <h3>基本样式</h3>
@@ -189,8 +190,8 @@
           <d-radio label="2" name="female">女</d-radio>
         </d-radio-group>
       </div>
-    </div> -->
-    <!-- <div class="checkout">
+    </div>
+    <div class="checkout">
       <h2>复选框</h2>
       <div class="row">
         <h3>基础样式</h3>
@@ -224,8 +225,8 @@
           disabled
         ></d-checkbox>
       </div>
-    </div> -->
-    <!-- <div class="checkboxGroup">
+    </div>
+    <div class="checkboxGroup">
       <h2>复选框组</h2>
       <div class="row">
         <d-checkbox-group v-model="checkedArray">
@@ -234,7 +235,7 @@
           <d-checkbox name="peach" label="3">桃子</d-checkbox>
         </d-checkbox-group>
       </div>
-    </div> -->
+    </div>
 
     <div class="formItem">
       <h2>表单项</h2>

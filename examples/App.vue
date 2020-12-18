@@ -134,7 +134,7 @@
       <h2>Switch</h2>
       <div class="row">
         <h3>基本Switch</h3>
-        <d-switch v-model="switchActive" @change="handleChange"></d-switch>
+        <d-switch v-model="switchActive"></d-switch>
       </div>
       <div class="row">
         <h3>自定义颜色</h3>

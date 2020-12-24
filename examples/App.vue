@@ -78,13 +78,14 @@
       >
       <d-dialog
         title="tip"
-        width="40%"
+        width="60%"
         top="200px"
         :visiable.sync="dialogVisiable"
       >
         <template v-slot:title>
           <span>提示</span>
         </template>
+
         <span>这是一段信息</span>
         <template v-slot:footer>
           <d-button @click="dialogVisiable = false">取消</d-button>

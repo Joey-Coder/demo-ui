@@ -49,7 +49,7 @@ export default {
     },
     width: {
       type: String,
-      default: '30%'
+      default: '50%'
     },
     top: {
       type: String,
@@ -90,7 +90,8 @@ export default {
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
-    width: 30%;
+    // width: 200px;
+    width: 40%;
     &_header {
       padding: 20px 20px 10px;
       display: flex;

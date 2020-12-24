@@ -68,6 +68,8 @@ import 'demot-ui/dist/demot-ui.css'
 | title    | String  | 对话框头部提示，默认为"提示"       |
 | visiable | Boolean | 对话框可见状态，默认为 false       |
 | mimicry  | Boolean | 对话框是否为拟态风格，默认为 false |
+| width  | String | 对话框宽度，默认为60% |
+| top  | String | 对话框距离顶部位置，默认为15vh |
 
 <br>
 

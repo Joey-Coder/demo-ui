@@ -4,7 +4,7 @@
     <div class="d-dialog_wrapper" v-show="visiable" @click.self="closeDialog">
       <div
         :class="['d-dialog', mimicry ? 'is-mimicry' : '']"
-        :style="{ width, 'margin-top': top }"
+        :style="{ width: width, 'margin-top': top }"
       >
         <div class="d-dialog_header">
           <!-- title支持slot插槽 -->
@@ -90,8 +90,6 @@ export default {
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
-    // width: 200px;
-
     &_header {
       padding: 20px 20px 10px;
       display: flex;

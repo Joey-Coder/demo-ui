@@ -78,7 +78,6 @@
       >
       <d-dialog
         title="tip"
-        width="60%"
         top="200px"
         :visiable.sync="dialogVisiable"
       >

@@ -49,7 +49,7 @@ export default {
     },
     width: {
       type: String,
-      default: '50%'
+      default: '60%'
     },
     top: {
       type: String,

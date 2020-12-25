@@ -25,6 +25,24 @@ Vue.use(DemoUI)
 import 'demot-ui/dist/demot-ui.css'
 ```
 
+4. 导入 font-awesome 字体图标
+
+```js
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import {
+  faEnvelope,
+  faStar,
+  faEdit,
+  faTrashAlt,
+  faSmile,
+  faTimesCircle,
+  faEye
+} from '@fortawesome/free-regular-svg-icons'
+
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+```
+
 <br>
 
 ---
@@ -68,8 +86,8 @@ import 'demot-ui/dist/demot-ui.css'
 | title    | String  | 对话框头部提示，默认为"提示"       |
 | visiable | Boolean | 对话框可见状态，默认为 false       |
 | mimicry  | Boolean | 对话框是否为拟态风格，默认为 false |
-| width  | String | 对话框宽度，默认为60% |
-| top  | String | 对话框距离顶部位置，默认为15vh |
+| width    | String  | 对话框宽度，默认为 60%             |
+| top      | String  | 对话框距离顶部位置，默认为 15vh    |
 
 <br>
 
@@ -188,7 +206,7 @@ import 'demot-ui/dist/demot-ui.css'
 
 <br>
 
-### 复选框组(RadioGroup)
+### 表单(Form)
 
 <br>
 

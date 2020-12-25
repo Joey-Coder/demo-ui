@@ -37,4 +37,16 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
+export {
+  Button,
+  Dialog,
+  Input,
+  Checkbox,
+  Radio,
+  RadioGroup,
+  Switch,
+  CheckboxGroup,
+  Form,
+  FormItem
+}
 export default { install }

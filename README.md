@@ -19,6 +19,15 @@ import DemoUI from 'demot-ui'
 Vue.use(DemoUI)
 ```
 
+3. 按需导入
+
+```js
+import DemoUI, { Button, Form } from 'demot-ui'
+Vue.use(DemoUI, {
+  components: [Button, Form]
+})
+```
+
 3. 导入样式
 
 ```js

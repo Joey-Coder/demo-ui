@@ -10,7 +10,7 @@ import CheckboxGroup from './checkbox-group'
 import Form from './form'
 import FormItem from './form-item'
 
-const components = [
+var components = [
   Button,
   Dialog,
   Input,
@@ -23,7 +23,10 @@ const components = [
   FormItem
 ]
 
-const install = function(Vue) {
+const install = function(Vue, options) {
+  if (options && options.components) {
+    components = options.components
+  }
   components.forEach(item => {
     Vue.component(item.name, item)
   })

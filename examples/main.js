@@ -17,6 +17,10 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 import DemoUI from '../packages/index'
 
+// 按需导入
+// import Button from '../packages/button.vue'
+// Vue.use(DemoUI, { components: [Button] })
+
 Vue.use(DemoUI)
 
 library.add(

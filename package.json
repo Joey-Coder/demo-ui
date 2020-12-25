@@ -1,6 +1,6 @@
 {
   "name": "demot-ui",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "main": "dist/demot-ui.umd.min.js",
   "author": {

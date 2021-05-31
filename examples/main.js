@@ -16,6 +16,7 @@ import {
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 import DemoUI from '../packages/index'
+// console.log('DemoUI:', DemoUI)
 
 // 按需导入
 // import Button from '../packages/button.vue'

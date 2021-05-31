@@ -28,6 +28,7 @@ const install = function(Vue, options) {
     components = options.components
   }
   components.forEach(item => {
+    // 往全局注册组件
     Vue.component(item.name, item)
   })
 }
